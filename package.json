@@ -1,0 +1,26 @@
+{
+  "name": "mini.me",
+  "version": "1.0.0",
+  "description": "A URL shortening service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DHDaniel/mini.me.git"
+  },
+  "author": "Daniel Hernandez",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/DHDaniel/mini.me/issues"
+  },
+  "homepage": "https://github.com/DHDaniel/mini.me#readme",
+  "dependencies": {
+    "consolidate": "^0.14.1",
+    "express": "^4.14.0",
+    "handlebars": "^4.0.5",
+    "mongodb": "^2.2.10",
+    "shortid": "^2.2.6"
+  }
+}
