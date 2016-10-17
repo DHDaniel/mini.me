@@ -18,10 +18,10 @@ html, body {
 }
 
 #landing {
-  height: 600px;
+  height: 570px;
 
   background-image: url("../images/background.svg");
-  background-size: auto 600px;
+  background-size: auto 570px;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -81,6 +81,14 @@ html, body {
   }
 }
 
+@media (max-width: 420px) {
+  #landing {
+    background-image: url("../images/mobile_background.svg");
+     
+  }
+}
+
+
 #product-info {
   background-color: #F4F4F4;
   text-align: center;
@@ -100,7 +108,7 @@ html, body {
   img {
     width: 200px;
     height: auto;
-    margin-bottom: 30px;
+    margin: 0px auto 30px;
 
     &#own-it {
       width: 300px;
@@ -111,7 +119,7 @@ html, body {
 }
 
 footer {
-  padding: 20px 60px;
+  padding: 20px 0px;
   color: #ccc;
   text-align: center;
   background-color: $theme;
