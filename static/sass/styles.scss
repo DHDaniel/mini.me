@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+
+$theme : #0072B9;
+$highlight : #F4AE00;
+
+html, body {
+  font-family: "Roboto", sans-serif;
+}
+
+#navbar {
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.highlight {
+  font-family: "Nothing You Could Do", Roboto, sans-serif;
+}
+
+#landing {
+  height: 600px;
+
+  background-image: url("../images/background.svg");
+  background-size: auto 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h1 {
+      margin-top: 120px;
+
+      span {
+        line-height: 2em;
+        font-family: "Nothing You Could Do";
+        color: $highlight;
+      }
+    }
+  }
+
+  .input {
+    text-align: center;
+
+    .shorten-url {
+
+      input {
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+
+        /* Positioning scissor icon */
+        background-image: url("../images/scissor.svg");
+        background-position: 98% center;
+        background-size: 22px auto;
+        background-repeat: no-repeat;
+        background-color: #E6E6E6;
+      }
+
+    }
+
+    button {
+      background-color: transparent;
+      border: 1px solid $highlight;
+      padding: 5px 10px;
+      height: 40px;
+      width: 110px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      color: $highlight;
+
+      margin: 40px 0px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: lighten($highlight, 35%);
+      }
+    }
+  }
+}
