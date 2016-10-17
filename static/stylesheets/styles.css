@@ -1,22 +1,19 @@
+/* Importing necessary fonts */
 @import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
-/* line 7, ../sass/styles.scss */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* line 10, ../sass/styles.scss */
 html, body {
   font-family: "Roboto", sans-serif;
 }
 
-/* line 11, ../sass/styles.scss */
+/* line 14, ../sass/styles.scss */
 #navbar {
   height: 80px;
   background-color: #fff;
   text-align: center;
 }
 
-/* line 17, ../sass/styles.scss */
-.highlight {
-  font-family: "Nothing You Could Do", Roboto, sans-serif;
-}
-
-/* line 21, ../sass/styles.scss */
+/* line 20, ../sass/styles.scss */
 #landing {
   height: 600px;
   background-image: url("../images/background.svg");
@@ -24,26 +21,26 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 29, ../sass/styles.scss */
+/* line 28, ../sass/styles.scss */
 #landing .header {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 33, ../sass/styles.scss */
+/* line 32, ../sass/styles.scss */
 #landing .header h1 {
   margin-top: 120px;
 }
-/* line 36, ../sass/styles.scss */
+/* line 35, ../sass/styles.scss */
 #landing .header h1 span {
   line-height: 2em;
   font-family: "Nothing You Could Do";
   color: #F4AE00;
 }
-/* line 44, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
 #landing .input {
   text-align: center;
 }
-/* line 49, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 #landing .input .shorten-url input {
   width: 100%;
   border-radius: 10px;
@@ -56,7 +53,7 @@ html, body {
   background-repeat: no-repeat;
   background-color: #E6E6E6;
 }
-/* line 65, ../sass/styles.scss */
+/* line 64, ../sass/styles.scss */
 #landing .input button {
   background-color: transparent;
   border: 1px solid #F4AE00;
@@ -69,7 +66,44 @@ html, body {
   margin: 40px 0px;
   transition: all 0.2s ease-in-out;
 }
-/* line 78, ../sass/styles.scss */
+/* line 77, ../sass/styles.scss */
 #landing .input button:hover {
   background-color: #ffe6a8;
+}
+
+/* line 84, ../sass/styles.scss */
+#product-info {
+  background-color: #F4F4F4;
+  text-align: center;
+  padding: 30px 0px;
+}
+/* line 89, ../sass/styles.scss */
+#product-info h3 {
+  font-family: Roboto, sans-serif;
+  margin-bottom: 20px;
+}
+/* line 93, ../sass/styles.scss */
+#product-info h3 span {
+  font-family: "Nothing You Could Do", serif;
+  color: #0072B9;
+  font-size: 1.2em;
+}
+/* line 100, ../sass/styles.scss */
+#product-info img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 30px;
+}
+/* line 105, ../sass/styles.scss */
+#product-info img#own-it {
+  width: 300px;
+  height: auto;
+}
+
+/* line 113, ../sass/styles.scss */
+footer {
+  padding: 20px 60px;
+  color: #ccc;
+  text-align: center;
+  background-color: #0072B9;
 }

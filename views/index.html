@@ -28,7 +28,7 @@
 
   <div id="landing">
 
-  <div class="container">
+    <div class="container">
 
       <div class="row header">
         <div class="col-xs-12">
@@ -44,31 +44,67 @@
             <button type="submit">Shorten</button>
           </form>
         </div>
+
       </div> <!-- ./ input -->
+
     </div> <!-- ./ container -->
 
   </div> <!-- ./ landing -->
 
+<div id="product-info">
+
   <div class="container">
-    <div id="how-to">
 
-      <div class="row">
-        <div class="col-xs-12 col-sm-4">
-          First
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          Second
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          Third
-        </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <h3>The <span>web</span> doesn't have to be a <span>spiderweb</span></h3>
+        <img src="images/spiderweb.svg" alt="Don't suffer using extremely long links." />
+        <p>
+          Don't let the internet turn into a sea of long, unreadable links - humanity doesn't deserve such madness. Shorten your links.
+        </p>
       </div>
-
+      <div class="col-xs-12 col-sm-4">
+        <h3>Own your link. Use it <br /><span>anywhere</span></h3>
+        <img src="images/own your link.svg" alt="Use your short links everywhere." id="own-it" />
+        <p>
+          Don't limit yourself to 140 characters. Share more using less.
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <h3>Get precious <span>insight</span> from <br />your links</h3>
+        <img src="images/analytics.svg" alt="Get precious insight" />
+        <p>
+          See who is clicking on all those links you are shortening. Where are they from? What language do they speak? How many times has it been clicked?
+        </p>
+      </div>
     </div>
-  </div>
+
+  </div> <!-- ./ container -->
+
+</div> <!-- ./ product-info -->
+
+<footer>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <p>
+          Daniel Hernández &copy; Copyright 2016 - <span id="copyright-date"></span>
+        </p>
+      </div>
+    </div>
+  </div> <!-- ./ container -->
+</footer> <!-- ./ footer -->
 
 
   <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Script for copyright date -->
+  <script type="text/javascript">
+    var today = new Date();
+    var year = today.getFullYear();
+    $("#copyright-date").html(year);
+  </script>
 </body>
 </html>
