@@ -1,0 +1,42 @@
+/* Importing necessary fonts */
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* line 10, ../sass/link-page.scss */
+html, body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 14, ../sass/link-page.scss */
+#navbar {
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* line 20, ../sass/link-page.scss */
+#landing-link {
+  height: calc(100vh - 80px);
+  background-color: #e4e4e4;
+  width: 100%;
+  text-align: center;
+}
+/* line 26, ../sass/link-page.scss */
+#landing-link .header {
+  margin-top: 150px;
+}
+/* line 29, ../sass/link-page.scss */
+#landing-link .header span {
+  color: #0072B9;
+  margin: 4em 0em;
+  font-size: 1.5em;
+  overflow-wrap: break-word;
+  /* ironic. Very ironic. */
+}
+
+/* line 38, ../sass/link-page.scss */
+footer {
+  padding: 20px 0px;
+  color: #ccc;
+  text-align: center;
+  background-color: #0072B9;
+}

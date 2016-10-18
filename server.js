@@ -34,7 +34,13 @@ app.set("port", (process.env.PORT || 8080));
 app.get("/", function (req, res) {
 
   res.render("index", {
+  });
+});
 
+app.get("/shorten/", function (req, res) {
+
+  res.render("link", {
+    shortened_url : "http://mini.me.herokuapp.com/6h739h"
   });
 });
 
