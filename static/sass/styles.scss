@@ -7,6 +7,8 @@
 $theme : #0072B9;
 $highlight : #F4AE00;
 
+$mobile-breakpoint: 420px;
+
 html, body {
   font-family: "Roboto", sans-serif;
 }
@@ -15,6 +17,19 @@ html, body {
   height: 80px;
   background-color: #fff;
   text-align: center;
+
+  [class*="col-"] {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #logo {
+    height: 55px;
+    width: auto;
+    margin: auto;
+  }
 }
 
 #landing {
@@ -36,6 +51,12 @@ html, body {
         line-height: 2em;
         font-family: "Nothing You Could Do";
         color: $highlight;
+
+        @media (max-width: $mobile-breakpoint) {
+          & {
+            font-size: 0.8em;
+          }
+        }
       }
     }
   }
@@ -81,10 +102,10 @@ html, body {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: $mobile-breakpoint) {
   #landing {
     background-image: url("../images/mobile_background.svg");
-     
+
   }
 }
 
@@ -123,5 +144,12 @@ footer {
   color: #ccc;
   text-align: center;
   background-color: $theme;
+
+  img {
+    height: 25px;
+    width: auto;
+    color: white;
+    margin: 0px 15px;
+  }
 
 }

@@ -12,19 +12,32 @@ html, body {
   background-color: #fff;
   text-align: center;
 }
+/* line 19, ../sass/link-page.scss */
+#navbar [class*="col-"] {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 26, ../sass/link-page.scss */
+#navbar #logo {
+  height: 55px;
+  width: auto;
+  margin: auto;
+}
 
-/* line 20, ../sass/link-page.scss */
+/* line 33, ../sass/link-page.scss */
 #landing-link {
   height: calc(100vh - 80px);
   background-color: #e4e4e4;
   width: 100%;
   text-align: center;
 }
-/* line 26, ../sass/link-page.scss */
+/* line 39, ../sass/link-page.scss */
 #landing-link .header {
   margin-top: 150px;
 }
-/* line 29, ../sass/link-page.scss */
+/* line 42, ../sass/link-page.scss */
 #landing-link .header span {
   color: #0072B9;
   margin: 4em 0em;
@@ -33,7 +46,7 @@ html, body {
   /* ironic. Very ironic. */
 }
 
-/* line 38, ../sass/link-page.scss */
+/* line 51, ../sass/link-page.scss */
 footer {
   padding: 20px 0px;
   color: #ccc;

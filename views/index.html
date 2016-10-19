@@ -20,7 +20,7 @@
 
       <!-- Logo -->
       <div class="col-xs-4 col-xs-offset-4">
-        <h1><a href="/">MINI.ME</a></h1>
+        <a href="/"><img src="/images/logo.svg" alt="Mini.me - go to home page" id="logo" /></a>
       </div>
 
     </div>
@@ -39,9 +39,12 @@
       <div class="row input">
         <!-- Form where link will be pasted into -->
         <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
-          <form class="shorten-url" action="/" method="post">
+          <form class="shorten-url" action="/api/shorten/" method="post">
             <input type="text" name="url" placeholder="http://humongous-url-that-no-one-reads.com">
-            <button type="submit"><a href="shorten/">Shorten</a></button>
+            {{#if err}}
+              <span style="color: red;">Please enter a valid URL</span><br />
+            {{/if}}
+            <button type="submit">Shorten</button>
           </form>
         </div>
 
@@ -91,6 +94,8 @@
       <div class="col-xs-12">
         <p>
           Daniel Hernández &copy; Copyright 2016 - <span id="copyright-date"></span>
+          <a href="https://github.com/DHDaniel"><img src="/images/social/GitHub-Mark-Light-64px.png" alt="GitHub" /></a>
+          <a href="http://codepen.io/DHDanny/"><img src="/images/social/codepen white.png" alt="CodePen" /></a>
         </p>
       </div>
     </div>
